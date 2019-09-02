@@ -1,0 +1,40 @@
+/********** Page Header **********/
+#ms-loc-info-cont {
+  padding: 2%;
+  background: #fbfbfb;
+}
+
+.ms-img-cont {
+  background-repeat: no-repeat;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 576px) {
+  .ms-img-cont {
+    height: 200px;
+  }
+}
+
+.ms-img-cont:after {
+  background: red;
+}
+
+/*************** Control Panel *************/
+#control-panel {
+  background: #444;
+  padding: 1%;
+}
+
+/******** Media Queries ******************/
+
+@media (max-width: 420px) {
+  .left-border-cls {
+    border-left: none;
+  }
+
+  .float-right {
+    float: left !important;
+  }
+}

@@ -1,0 +1,96 @@
+.photos-masonry {
+  background: #eee !important;
+  /* max-width: 1200px !important; */
+  width: 98% !important;
+}
+
+/* clearfix */
+.photos-masonry:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.masonry-sizer,
+.photo {
+  float: left !important;
+  width: 49% !important;
+  border: 2px solid rgba(255, 255, 255, 1);
+}
+
+.photo.enlarge {
+  float: left !important;
+  width: 98% !important;
+  z-index: 99;
+}
+
+/* Pullsheet Button  */
+
+.addtopullsheet {
+  position: absolute;
+  z-index: 9999;
+  bottom: 10px;
+  left: 5px;
+  color: #fff;
+  cursor: pointer;
+  background: rgba(35, 39, 40, 0.8);
+  border-radius: 30px;
+  line-height: 1;
+  font-size: 1px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  color: #face00;
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+}
+
+/* Responsive Styles */
+
+/* 3 columns by default */
+
+@media screen and (min-width: 768px) {
+  /* 5 columns for larger screens */
+  .masonry-sizer,
+  .photo {
+    width: 20% !important;
+  }
+
+  .photo.enlarge {
+    float: left !important;
+    width: 60% !important;
+  }
+
+  .addtopullsheet {
+    position: absolute;
+    z-index: 9999;
+    bottom: 5px;
+    left: 5px;
+    color: #fff;
+    cursor: pointer;
+    background: rgba(35, 39, 40, 0.8);
+    border-radius: 50px;
+    line-height: 1;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: #face00;
+    font-size: 14px !important;
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+  }
+}
+
+.photo img {
+  cursor: url('data:image/svg+xml;utf8,<svg width="48" height="48" xmlns="http://www.w3.org/2000/svg"><path fill="%23FFF" d="M21 0v21H0v6h21v21h6V27h21v-6H27V0z" fill-rule="evenodd"/></svg>')
+      24 24,
+    auto;
+}
+
+.photo.enlarge img {
+  cursor: url('data:image/svg+xml;utf8,<svg width="48" height="6" xmlns="http://www.w3.org/2000/svg"><path fill="%23FFF" d="M0 6h48V0H0z" fill-rule="evenodd"/></svg>')
+      24 3,
+    auto;
+}

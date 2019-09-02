@@ -1,0 +1,15 @@
+.ms-loc-slider .slick-prev {
+  left: 0 !important;
+  z-index: 9999;
+  padding-left: 5px;
+}
+
+.ms-loc-slider .slick-next {
+  right: 0 !important;
+  z-index: 9999;
+  padding-right: 25px !important;
+}
+
+.ms-loc-slider-image {
+  height: 250px !important;
+}

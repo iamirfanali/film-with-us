@@ -1,0 +1,12 @@
+#ms-save-loc-cont {
+  max-width: 400px;
+}
+
+#ms-save-loc-images-cont {
+  max-height: 280px;
+  overflow-y: scroll;
+}
+
+#ms-save-loc-images-cont img {
+  min-height: 65px !important;
+}
