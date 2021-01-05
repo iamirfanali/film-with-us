@@ -5,7 +5,7 @@
   "homepage": "https://www.morosoft.com/test",
   "dependencies": {
     "@react-pdf/renderer": "^1.4.2",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "bootstrap": "^4.3.1",
     "classnames": "^2.2.6",
     "concat": "^1.0.3",
